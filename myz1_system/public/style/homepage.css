@@ -1,0 +1,390 @@
+/*CENTER PAGE*/
+main{
+    margin-top: 1.4rem;
+    margin-left: 1.8rem;
+    background-color: #16392033;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    border-radius: 0px 17px 17px 0px;
+    margin-bottom: 0.5rem;
+}
+main h1 span{
+    background-color: white;
+    position: relative;
+    top: 0.8rem;
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0px 30px 100px 0px;
+    border-color: #16381f;
+    border-style: solid solid none none;
+    border-width: 0.8rem;
+}
+main .featured-list{
+    margin-top: 5rem;
+}
+main .featured-list .row{
+    padding: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.4rem;
+}
+main .featured-list .row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+main .featured-list .row .col .featured-img{
+    position: relative;
+    top: 1rem;
+    width: 200px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000000bf;
+}
+main .row .col:nth-child(odd){
+    background: #163920;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #00000040;
+}
+main .row .col:nth-child(even){
+    background-color: #43855A;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #00000040;
+}
+main .row h5{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+main .row p{
+    font-size: 16px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 1rem;
+}
+main .recent-announcement{
+    margin-top: 1.3rem;
+}
+main .recent-announcement h2{
+    margin-bottom: 0.8rem;
+}
+main .recent-announcement a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: black;
+}
+
+grid-item-one { grid-area: image; }
+grid-item-two { grid-area: contents; }
+
+main .recent-announcement .row2 .col2{
+    display: grid;
+    grid-template-areas: 
+        'image contents';
+    cursor: pointer;
+    background: linear-gradient(to right, #163920 2%, white 2%);
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #00000040;
+}
+main .recent-announcement .row2 .col2 h5 span{
+    display: flex;
+    justify-content: right;
+    margin-top: -2rem;
+}
+.grid-item-one{
+    background-color: #d9d9d9;
+    display: flex;
+    width: 132px;
+    height: 129px;
+    margin: auto;
+    border-radius: 10px;
+    margin-left: 3rem;
+}
+.grid-item-two{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+main h2{
+    font-size: 14px;
+    color: #16381f;
+    font-weight: 200;
+}
+main h1{
+    margin-left: -2rem;
+}
+main .recent-announcement h1{
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+    color: #16381f;
+    font-weight: 100;
+}
+
+/*RIGHT PAGE*/
+.right-section{
+    margin-top: 1.4rem;
+    margin-right: 1rem;
+}
+.right-section .nav{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+.right-section .nav button{
+    display: none;
+}
+.right-section .reminders{
+    margin-top: 2rem;
+}
+.right-section .reminders .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+.right-section .reminders .header span{
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    border-radius: 50%;
+}
+.right-section .reminders .notification{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.right-section .reminders .notification:hover{
+    box-shadow: none;
+}
+.right-section .reminders .notification .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+.right-section .reminders .notification .icon{
+    padding: 0.6rem;
+    color: white;
+    background-color: #1B9C85;
+    border-radius: 20%;
+    display: flex;
+}
+.right-section .reminders .notification.deactive .icon{
+    background-color: red;
+}
+.right-section .reminders .add-reminder{
+    background-color: white;
+    border: 2px dashed #6C9BCF;
+    color: #6C9BCF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.right-section .reminders .add-reminder:hover{
+    background-color: #6C9BCF;
+    color: white;
+}
+.right-section .reminders .add-reminder div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+/*LOG-IN MODAL*/
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(201, 201, 201, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+.overlay .login-logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.overlay .login-logo img{
+    width: 30%;
+}
+.wrapper{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #076026;
+    border-radius: 20px;
+    width: 30%;
+    position: relative;
+    height: 60vh;
+    box-shadow: 4px 4px 4px #00000040;
+}
+.wrapper h1{
+    font-size: 35px;
+    padding-top: 10px;
+    margin-top: 0;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+.wrapper .close{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    transition: all 200ms;
+    transition: all 3s ease-out;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.overlay .ellipse{
+    position: absolute;
+    width: 73px;
+    height: 70px;
+    top: 16.5rem;
+    left: 63%;
+    background-color: #076026;
+    border-radius: 36.5px/35px;
+    box-shadow: 4px 4px 4px #00000040;
+    overflow: hidden;
+}
+.overlay .ellipse-2{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 18.3rem;
+    left:68%;
+    background-color: #076026;
+    border-radius: 11px;
+    box-shadow: 4px 4px 4px #00000040;
+}
+.overlay .ellipse-3{
+    position: absolute;
+    width: 49px;
+    height: 50px;
+    left: 33.6%;
+    top: 20rem;
+    background-color: #076026;
+    border-radius: 24.5px/25px;
+    box-shadow: 4px 4px 4px #00000040;
+}
+.overlay .ellipse-4{
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    top: 21.3rem;
+    left: 32.5%;
+    background-color: #076026;
+    border-radius: 6px;
+    box-shadow: 4px 4px 4px #00000040;
+}
+.container2 form{
+    padding: 15px;
+    text-align: center;
+}
+.container2 form .form_floating .form-icon{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.container2 form .form_floating .form-icon span{
+    position: absolute;
+    font-size: 28px;
+    left: 19.5rem; /* Adjust the position of the icon as needed */
+    top: -0.1rem;
+    transform: translateY(-50%);
+    color: black; /* Adjust the color of the icon */
+}
+.container2 form .form_floating{
+    padding: 1rem;
+}
+.container2 input[type=text] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.container2 input[type=password] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.container2 input::placeholder {
+    font-size: 1.2rem;
+}
+.wrapper .submit{
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    padding: 0px;
+    top: -3.5rem;
+    margin-left: 24.5rem;
+    overflow: hidden;
+}
+.wrapper .submit span{
+    font-size: 40px;
+    position: relative;
+    top: 0.9rem;
+    margin-left: -1.3rem;
+}
+.container2 form .pass-forgot{
+    color: white;
+    font-style: italic;
+    display: flex;
+    position: absolute;
+    top: 18rem;
+    right: 22rem;
+}
+.wrapper .sign-up{
+    width: 20%;
+    display: flex;
+    position: absolute;
+    right: 37%;
+    top: 85%;
+    padding-bottom: 2rem;
+}
+.wrapper .sign-up h6{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -35%;
+    left: -20%;
+}

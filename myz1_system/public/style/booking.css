@@ -1,0 +1,198 @@
+/*CENTER PAGE*/
+main{
+    margin-top: 1.4rem;
+    margin-left: 1.8rem;
+    background-color: #16392033;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    border-radius: 0px 17px 17px 0px;
+    margin-bottom: 0.5rem;
+}
+main h1 span{
+    background-color: white;
+    position: relative;
+    top: 0.8rem;
+    padding-top: 1.9rem;
+    padding-bottom: 1.9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0px 30px 100px 0px;
+    border-color: #16381f;
+    border-style: solid solid none none;
+    border-width: 0.8rem;
+}
+main h1{
+    margin-left: -2rem;
+}
+main .booking-landing{
+    margin-top: 5rem;
+}
+main .button-choices{
+    background-color: white;
+}
+main .row{
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+main .row .col{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-bottom: white solid;
+    border-width: 2px;
+}
+main .row .col a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: #16381f;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+main .row .col:hover{
+    border-bottom: #16381f solid;
+    border-width: 2px;
+}
+.overlay2 .overlay3{
+    visibility: hidden;
+    height: 10rem;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.overlay2 #services{
+    position: relative;
+    top: -9.9rem;
+}
+.overlay2 .overlay3:target{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}
+main .overlay2 .overlay3 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+grid-item-one { grid-area: image; }
+grid-item-two { grid-area: equipment-description; }
+
+main .equipment-contents .row2 .col2{
+    display: grid;
+    grid-template-areas: 
+        'image equipment-description';
+    cursor: pointer;
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 20px;
+}
+.grid-item-one .row3 .col3-img{
+    background-color: white;
+    display: flex;
+    width: auto;
+    height: 140px;
+    padding-left: 12rem;
+}
+.grid-item-one .row3 .col3 p{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 1rem;
+}
+.grid-item-one .row3{
+    border-color: black;
+    border-style: solid solid solid solid;
+    border-width: 5px;
+}
+.grid-item-two{
+    background-color: #43855a4c;
+    margin-left: -1rem;
+    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+
+/*RIGHT PAGE*/
+.right-section{
+    margin-top: 1.4rem;
+    margin-right: 1rem;
+}
+.right-section .nav{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+.right-section .nav button{
+    display: none;
+}
+.right-section .reminders{
+    margin-top: 2rem;
+}
+.right-section .reminders .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+.right-section .reminders .header span{
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    border-radius: 50%;
+}
+.right-section .reminders .notification{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.right-section .reminders .notification:hover{
+    box-shadow: none;
+}
+.right-section .reminders .notification .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+.right-section .reminders .notification .icon{
+    padding: 0.6rem;
+    color: white;
+    background-color: #1B9C85;
+    border-radius: 20%;
+    display: flex;
+}
+.right-section .reminders .notification.deactive .icon{
+    background-color: red;
+}
+.right-section .reminders .add-reminder{
+    background-color: white;
+    border: 2px dashed #6C9BCF;
+    color: #6C9BCF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.right-section .reminders .add-reminder:hover{
+    background-color: #6C9BCF;
+    color: white;
+}
+.right-section .reminders .add-reminder div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
