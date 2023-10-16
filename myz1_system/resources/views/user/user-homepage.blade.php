@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/homepage.css">
-    <link rel="stylesheet" href="../style/responsive.css">
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/animation.css">
+    <link rel="stylesheet" href="{{url('style/homepage.css')}}">
+    <link rel="stylesheet" href="{{url('style/responsive.css')}}">
+    <link rel="stylesheet" href="{{url('style/main.css')}}">
+    <link rel="stylesheet" href="{{url('style/animation.css')}}">
     <title>myZ1 Homepage</title>
 </head>
 <style>
@@ -21,40 +21,9 @@
     }
 </style>
 <body>
-<?php
-    //learn from w3schools.com
-    session_start();
 
-    if(isset($_SESSION["user"])){
-        if(($_SESSION["user"])=="" or $_SESSION['usertype']!='p'){
-            header("location: ../login.php");
-        }else{
-            $useremail=$_SESSION["user"];
-        }
-
-    }else{
-        header("location: ../login.php");
-    }
-    
-
-    //import database
-    include("../connection.php");
-
-    $sqlmain= "select * from patient where pemail=?";
-    $stmt = $database->prepare($sqlmain);
-    $stmt->bind_param("s",$useremail);
-    $stmt->execute();
-    $userrow = $stmt->get_result();
-    $userfetch=$userrow->fetch_assoc();
-
-    $userid= $userfetch["pid"];
-    $username=$userfetch["pname"];
-    //echo $userid;
-    //echo $username;   
-    ?> 
-<!--HEADER-->
 <div class="page-header">
-    <img src="../images/images/parts/Screenshot 2023-09-29 082533.png" alt="">
+    <img src="{{asset('images/parts/Screenshot 2023-09-29 082533.png')}}">
 </div>
 <!--HEADER-->
     <div class="container-fluid">
@@ -280,7 +249,7 @@
 
 <!--FOOTER-->
 <div class="footer">
-    <img src="../images/images/zonefooter.png">
+    <img src="{{asset('images/zonefooter.png')}}">
 </div>
 <!--FOOTER-->
 

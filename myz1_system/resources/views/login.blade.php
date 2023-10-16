@@ -34,7 +34,8 @@
                 </td>
             </tr>
             <tr>
-                <form action="" method="POST" >
+            <form method="POST" action="{{ route('login') }}">
+            @csrf <!-- CSRF token -->
             </tr>
             <tr>
                 <td class="label-td">
@@ -52,7 +53,7 @@
             </tr>
             <tr>
                 <td>
-                    <input type="submit" value="Login" class="login-btn btn-primary btn">
+                <button type="submit">Login</button>
                 </td>
             </tr>
         </div>
