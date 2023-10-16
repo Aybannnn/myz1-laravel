@@ -76,6 +76,11 @@ td{
 .input-text::placeholder{
     font-family: 'K2D';
 }
+.errormsg{
+    color: red;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
 .ellipse{
     position: absolute;
     width: 73px;

@@ -48,7 +48,13 @@
                 </td>
             </tr>
             <tr>
-                <td><br>
+                <td>
+                    <br>
+                @if(session('error'))
+                    <div class="errormsg">
+                        {{ session('error') }}
+                    </div>
+                @endif
                 </td>
             </tr>
             <tr>
@@ -65,7 +71,7 @@
                     <br><br><br>
                 </td>
             </tr>
-                    </form>
+            </form>
         </table>
     </div>
     <div class="ellipse"></div>

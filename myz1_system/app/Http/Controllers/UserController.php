@@ -35,7 +35,7 @@ class UserController extends Controller
             return redirect()->route('admin.adminHomepage');
         }
 
-return redirect()->back()->with('error', 'Invalid credentials');
+    return redirect()->back()->with('error', 'Invalid credentials. Please try again');
 }
 
     public function showUserpage()
